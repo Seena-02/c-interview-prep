@@ -45,7 +45,7 @@ int main(void)
     int arr[10] = {0};
     printf("sizeof(arr) in main: %zu\n", sizeof(arr)); // 40 on 32-bit
     printf("\n");
-    demonstrate_decay(arr);  // Changed &arr to arr
+    demonstrate_decay(&arr);  // Changed &arr to arr
     printf("\n");
     no_decay(&arr);
     printf("\n");
