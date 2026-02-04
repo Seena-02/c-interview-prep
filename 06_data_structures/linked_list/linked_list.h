@@ -1,8 +1,8 @@
-// TODO: Implement a singly linked list in C
+#ifndef LINKED_LIST_H
+#define LINKED_LIST_H
 
-#include <stdio.h>
-#include <stdlib.h>
 #include <stdbool.h>
+#include <stddef.h>
 
 typedef struct Node {
     int data;
@@ -13,8 +13,6 @@ typedef struct {
     Node* head;
     size_t size;
 } LinkedList;
-
-// TODO: Implement all functions
 
 // Creation/destruction
 LinkedList* list_create(void);
@@ -53,9 +51,4 @@ Node* list_find_middle(Node* head);
 // 4. Merge two sorted lists
 Node* merge_sorted_lists(Node* l1, Node* l2);
 
-int main(void) {
-    LinkedList* list = list_create();
-    // Test your implementation
-    list_destroy(list);
-    return 0;
-}
+#endif // LINKED_LIST_H
