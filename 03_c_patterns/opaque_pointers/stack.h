@@ -22,6 +22,10 @@ size_t stack_size(const Stack* s);
 bool stack_is_empty(const Stack* s);
 bool stack_is_full(const Stack* s);
 
+void print_stack(const Stack* s);
+void my_print(int value, void* ctx);
+void stack_for_each(const Stack* s, void (*callback)(int value, void* ctx), void* ctx);
+
 #endif // STACK_H
 
 // Interview question: What are the benefits of opaque pointers?
